@@ -1,0 +1,19 @@
+{
+  "name": "api-produtos-avancada",
+  "version": "1.0.0",
+  "description": "API REST para gerenciamento de produtos e categorias com Node.js e PostgreSQL",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "db:init": "node database.js" 
+  },
+  "dependencies": {
+    "dotenv": "^16.x.x",
+    "express": "^4.x.x",
+    "pg": "^8.x.x"
+  },
+  "devDependencies": {
+    "nodemon": "^3.x.x"
+  }
+}
