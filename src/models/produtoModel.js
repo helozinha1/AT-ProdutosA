@@ -41,6 +41,7 @@ const create = async (nome, preco, estoque, categoria_id) => {
   return result.rows[0];
 };
 
+
 const update = async (id, nome, preco, estoque, categoria_id) => {
   const result = await pool.query(
     "UPDATE produtos SET nome = $1, preco = $2, estoque = $3, categoria_id = $4 WHERE id = $5 RETURNING *",
